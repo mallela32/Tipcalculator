@@ -32,7 +32,9 @@ function calculate() {
 
   tip_total = tip_total.toFixed(2);
 
-  let number_people = tip_total/people_sharing;
+  let number_people = parseFloat(tip_total/people_sharing);
+  number_people = number_people.toFixed(2);
+
     let total_price = price+tip_total;
 
     if (people_sharing===1) {
