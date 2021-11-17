@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calculator || Mallela Nithhesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lora:ital@1&family=Playfair+Display&family=Ubuntu&family=Zen+Antique&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top_1">
+    <div class="container">
+      <div class="top">
+          <h1 class="heading"> TIP CALCULATOR </h1>
+      </div>
+      <form class="" action="index.html" method="post">
+        <label for="Price"> How much is your bill :</label><br>
+        <input type="number" placeholder="Enter Your Bill" class="price_amount" id="price" ><br>
+        <label >How was your service :</label>
+        <div class="services">
+          <select id="service" class="service_selector">
+         <option value="30">30% - Outstanding</option>
+         <option value="20"> 20% - Good</option>
+         <option value="10">10% - Poor</option>
+         <option value="0">0% - Bad</option>
+         </select>
+        </div>
+          <label for="bill">How many people sharing the bill?</label><br>
+          <input type="number" name="people" id="people_sharing"><br>
+          <button  class="btn" type="button" id="btn">CALCULATE</button>
+      </form>
+      <div class="tip">
+          <h2>Tip Amount</h2>
+          <div  id="tip_amount">
+            <input type="text" id="tip_amount_text" class="tip_display">
+          </div>
+      </div>
+      <label for="bill">TIP AMOUNT FOR EACH</label><br>
+      <input type="text" id="tip_amount_each"><br>
+    </div>
+
+
+  </div>
+  <script src="JS.js"></script>
+  </body>
+
+</html>
